@@ -4,12 +4,12 @@ import styled from 'styled-components'
 
 
 // const HeaderComtainer = styled.header`
-//     /* background: url("http://www.nexentire.com/webzine/201806/kr/assets/images/contents/010_04.jpg");
+//     background: url("http://www.nexentire.com/webzine/201806/kr/assets/images/contents/010_04.jpg");
 //     background-repeat: no-repeat;
-//     background-size: 100vw; */
+//     background-size: 100vw;
 //     width: 100vw;
 //     height: 100vh;
-//     /* overflow: hidden; */
+//     overflow: hidden;
 // `
 
 const Header = styled.div`
