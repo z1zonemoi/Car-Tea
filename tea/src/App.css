@@ -8,3 +8,17 @@ a {
     color: inherit;
     text-decoration: none;
 }
+
+.question {
+    display: flex;
+    justify-content: center;
+}
+
+.question > div {
+    width: 80vw;
+}
+
+#testTitle {
+    text-align: center;
+    margin: 5px;
+}
