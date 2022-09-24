@@ -1,14 +1,11 @@
 import React from 'react';
 
-
-
-
-const MyPage = () => {
+const Result = () => {
     return (
         <div>
-            MyPage입니다
+            
         </div>
     );
 };
 
-export default MyPage;
+export default Result;

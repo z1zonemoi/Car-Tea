@@ -1,5 +1,6 @@
 import React from 'react';
 import {RiCupFill} from 'react-icons/ri'
+import { Link } from 'react-router-dom';
 import styled from 'styled-components'
 
 
@@ -14,12 +15,13 @@ import styled from 'styled-components'
 
 const Header = styled.div`
     background-color: rgba(1,1,1,0.5);
-    nav{
+    nav > a{
         padding: 10px;
         color: #ffffff;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-weight: 500;
         font-size: 17px;
+        text-decoration: none;
     }
 `
 
@@ -27,7 +29,7 @@ const Nav = () => {
     return (
             <Header>
             <nav>
-                <RiCupFill/> Car 말고 Tea
+                <Link to="/"><RiCupFill/> Car 말고 Tea</Link>
             </nav>
             </Header>
     );

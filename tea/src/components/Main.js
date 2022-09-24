@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const MainContainer = styled.main`
@@ -7,6 +8,10 @@ const MainContainer = styled.main`
     background-color: wheat; */
     display: flex;
     justify-content: center;
+    > a {
+        text-decoration: none;
+        color: inherit;
+    }
 `
 const Avata = styled.div`
     width: 300px;
@@ -38,8 +43,8 @@ const Main = () => {
     return (
         <MainContainer>
             <Avata>아바타</Avata>
-            <TestDiv>Test</TestDiv>
-            <GoMyPageDiv>MyPage</GoMyPageDiv>
+            <Link to="/test"><TestDiv>Test</TestDiv></Link>
+            <Link to="/mypage"><GoMyPageDiv>MyPage</GoMyPageDiv></Link>
         </MainContainer>
     );
 };
