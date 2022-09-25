@@ -4,12 +4,6 @@ import ProgressBar from 'react-bootstrap/ProgressBar';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-
-// function BasicExample() {
-//   return <ProgressBar now={60} />;
-// }
-
-// export default BasicExample;
 const TestContainer = styled.div`
     
 
@@ -42,37 +36,38 @@ const TestChoice = styled.article`
            }
     }
     }
+`
+const TestResult = styled.article`
 
 `
 const CountInput = styled.input`
 `
 
-const Test = ({question}) => {
+const SecTest = ({question}) => {
     return (
-        <TestContainer>
+<TestContainer>
             {console.log(question)}
         <article className='question'>
-            <ProgressBar className='mt-2' now={0} />
+            <ProgressBar className='mt-2' now={50} />
         </article>
-            <div id="testTitle">{question.question[0].title}</div>
+            <div id="testTitle">{question.question[1].title}</div>
         <TestChoice>
-            <Link to='/test1'>
+            <Link to='/result'>
             <div>
-                <img src="../day.jpg" alt='낮이미지'/>
-                <Button variant="secondary">{question.question[0].A}</Button>{' '}
+                <img src="../flower.jpg" alt='꽃이미지'/>
+                <Button variant="secondary">{question.question[1].A}</Button>{' '}
             </div>
             </Link>
             <div className='blank'></div>
-            <Link to='/test1'>
+            <Link to='/result'>
             <div>
-                <img src="../night.jpg" alt='밤이미지'/>
-                <Button variant="secondary">{question.question[0].B}</Button>{' '}
+                <img src="../fruits.jpg" alt='과일이미지'/>
+                <Button variant="secondary">{question.question[1].B}</Button>{' '}
             </div>
             </Link>
         </TestChoice>
-        <CountInput type="hidden" id="DN" value="0"/>
-        </TestContainer>
+</TestContainer>
     );
 };
 
-export default Test;
+export default SecTest;

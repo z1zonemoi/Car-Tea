@@ -21,4 +21,10 @@ a {
 #testTitle {
     text-align: center;
     margin: 5px;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.blank{
+    width: 15px;
 }
