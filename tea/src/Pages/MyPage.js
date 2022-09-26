@@ -6,7 +6,7 @@ import React from 'react';
 const MyPage = () => {
     return (
         <div>
-            MyPage입니다
+            <div className='circle'></div>
         </div>
     );
 };
