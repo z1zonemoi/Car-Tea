@@ -68,9 +68,9 @@ const Result = () => {
                     이 차 어떠신가요?
                 </div>
                 <div className='imgContainer'>
-                    <img src='../images/DB1.jpg'/>
-                    <img src='../images/DB1.jpg'/>
-                    <img src='../images/DB1.jpg'/>
+                    <img src='/images/삼다연제주영귤.jpg'/>
+                    <img src='/images/제주화산암차.jpg'/>
+                    <img src='/images/제주난꽃향그린티.jpg'/>
                 </div>
                 <div className='information'>결과는 마이페이지에서 다시 볼 수 있어요!</div>
             </QuestionContainer>
